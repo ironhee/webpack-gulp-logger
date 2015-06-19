@@ -1,13 +1,10 @@
 {
-  "name": "webpack-logger",
+  "name": "webpack-gulp-logger",
   "version": "0.0.0",
-  "description": "webpack logger",
+  "description": "webpack logger for gulp",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "ironhee <leechulhee95@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "gulp-util": "^3.0.4"
   }
