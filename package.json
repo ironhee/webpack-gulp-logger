@@ -6,6 +6,8 @@
   "author": "ironhee <leechulhee95@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.1.2",
     "gulp-util": "^3.0.4"
-  }
+  },
+  "devDependencies": {}
 }

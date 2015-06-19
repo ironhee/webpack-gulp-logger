@@ -1,4 +1,4 @@
-
+var colors = require("colors");
 var gutil = require("gulp-util");
 
 module.exports = function webpackLogger (callback) {
