@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/leechulhee/.nvm/v0.10.38/bin/npm', 'publish' ]
+2 info using npm@2.8.3
+3 info using node@v0.10.38
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/leechulhee/Developer/Projects/webpack-gulp-logger',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/leechulhee/.npm/webpack-gulp-logger/0.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/leechulhee/.npm/webpack-gulp-logger/0.0.0/package.tgz',
+9 verbose tar pack   '/Users/leechulhee/Developer/Projects/webpack-gulp-logger' ]
+10 verbose tarball /Users/leechulhee/.npm/webpack-gulp-logger/0.0.0/package.tgz
+11 verbose folder /Users/leechulhee/Developer/Projects/webpack-gulp-logger
+12 info prepublish webpack-gulp-logger@0.0.0
+13 verbose addLocalTarball adding from inside cache /Users/leechulhee/.npm/webpack-gulp-logger/0.0.0/package.tgz
+14 silly cache afterAdd webpack-gulp-logger@0.0.0
+15 verbose afterAdd /Users/leechulhee/.npm/webpack-gulp-logger/0.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/leechulhee/.npm/webpack-gulp-logger/0.0.0/package/package.json written
+17 silly publish { name: 'webpack-gulp-logger',
+17 silly publish   version: '0.0.0',
+17 silly publish   description: 'webpack logger for gulp',
+17 silly publish   main: 'index.js',
+17 silly publish   author: { name: 'ironhee', email: 'leechulhee95@gmail.com' },
+17 silly publish   license: 'MIT',
+17 silly publish   dependencies: { colors: '^1.1.2', 'gulp-util': '^3.0.4' },
+17 silly publish   devDependencies: {},
+17 silly publish   readme: '# Install\n```\nnpm install --save webpack-gulp-logger\n```\n\n# Usage\n\n```javascript\nvar gulp = require(\'gulp\');\nvar webpackConfig = require(\'./webpack.config\');\nvar webpackLogger = require(\'webpack-gulp-logger\');\n\ngulp.task(\'build\', function(callback) {\n  webpack(webpackConfig).run(webpackLogger(callback));\n});\n```\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '2dfea442f92d8ed225bcfc80986240ffb617b39d',
+17 silly publish   _id: 'webpack-gulp-logger@0.0.0',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: '60c655188f3ed12b51ae7858604ff1ffc1cf4748',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name webpack-gulp-logger
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/webpack-gulp-logger
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading /Users/leechulhee/.npm/webpack-gulp-logger/0.0.0/package.tgz
+24 verbose request uri https://registry.npmjs.org/webpack-gulp-logger
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 15:48:43
+27 verbose request using bearer token for auth
+28 verbose request id 44b68af3c867ad9b
+29 http request PUT https://registry.npmjs.org/webpack-gulp-logger
+30 http 403 https://registry.npmjs.org/webpack-gulp-logger
+31 verbose headers { 'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '95',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Fri, 19 Jun 2015 06:48:44 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-nrt6126-NRT',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1434696523.664170,VS0,VE1303' }
+32 verbose request invalidating /Users/leechulhee/.npm/registry.npmjs.org/webpack-gulp-logger on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: "You cannot publish over the previously published version 0.0.0." : webpack-gulp-logger
+34 verbose stack     at CachingRegistryClient.<anonymous> (/Users/leechulhee/.nvm/v0.10.38/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+34 verbose stack     at Request._callback (/Users/leechulhee/.nvm/v0.10.38/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+34 verbose stack     at Request.self.callback (/Users/leechulhee/.nvm/v0.10.38/lib/node_modules/npm/node_modules/request/request.js:368:22)
+34 verbose stack     at Request.emit (events.js:98:17)
+34 verbose stack     at Request.<anonymous> (/Users/leechulhee/.nvm/v0.10.38/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+34 verbose stack     at Request.emit (events.js:117:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/Users/leechulhee/.nvm/v0.10.38/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+34 verbose stack     at IncomingMessage.emit (events.js:117:20)
+34 verbose stack     at _stream_readable.js:944:16
+34 verbose stack     at process._tickCallback (node.js:448:13)
+35 verbose statusCode 403
+36 verbose pkgid webpack-gulp-logger
+37 verbose cwd /Users/leechulhee/Developer/Projects/webpack-gulp-logger
+38 error Darwin 14.3.0
+39 error argv "node" "/Users/leechulhee/.nvm/v0.10.38/bin/npm" "publish"
+40 error node v0.10.38
+41 error npm  v2.8.3
+42 error code E403
+43 error "You cannot publish over the previously published version 0.0.0." : webpack-gulp-logger
+44 error If you need help, you may report this error at:
+44 error     <https://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]

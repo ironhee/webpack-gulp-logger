@@ -1,6 +1,6 @@
 {
   "name": "webpack-gulp-logger",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "webpack logger for gulp",
   "main": "index.js",
   "author": "ironhee <leechulhee95@gmail.com>",
